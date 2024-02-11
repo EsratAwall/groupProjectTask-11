@@ -9,7 +9,8 @@ html, body {
   .factse{
     position: relative;
     width: 100%;
-    background: linear-gradient(rgba(2, 2, 2, 0.5), rgba(0, 0, 0, 0.5)), url("./image/facts.jpg") fixed center center;
+    background: linear-gradient(rgba(2, 2, 2, 0.5), rgba(0, 0, 0, 0.5)), url("./image/cta-bg.jpg") fixed center center;
+    background-blend-mode: darken;
     background-size: cover;
     display: flex;
     justify-content: center;
