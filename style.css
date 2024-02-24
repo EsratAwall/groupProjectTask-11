@@ -5,6 +5,33 @@ html, body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
+  /* Navbar section */
+.nav-1{
+position: sticky !important;
+top: 0;
+background-color: white;
+z-index: 99999 ;
+transition: background-color 0.4s ease-in-out;
+}
+.nav-1 .scrolled{
+  background-color:rgb(97, 164, 3);
+  opacity: .98;
+
+}
+/* Our story */
+.parent{
+  overflow: hidden;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+
+}
+.zoomimg{
+  transition:all 1.1s;
+}
+.parent:hover .zoomimg{
+  transform: scale(1.2);
+}
   /* fact */
   .factse{
     position: relative;
@@ -16,3 +43,47 @@ html, body {
     justify-content: center;
     align-items: center;
   }
+/* Donate section */
+.donate{
+    position: relative;
+    width: 100%;
+    background: linear-gradient(rgba(2, 2, 2, 0.5), rgba(0, 0, 0, 0.5)), url("./image/we do.icon/donate.jpg") fixed center center;
+    background-blend-mode: darken;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .placeclass{
+    border: 2px solid white;
+  }
+  .placeclass::placeholder{
+    color: white;
+    
+  }
+  /* Event section */
+  .event-text{
+    position: relative;
+   
+}
+
+.event-text::before {
+    position: absolute;
+    content: "";
+    width: 2px;
+    height: calc(90% - 5px);
+    top: 6px;
+    left: 0;
+    background: rgba(0, 0, 0, .15);
+}
+
+ .event-text::after {
+    position: absolute;
+    content: "";
+    width: 4px;
+    height: 40px;
+    top: calc(46% - 20px);
+    left: -1px;
+    background:rgb(97, 164, 3);
+}
+  
