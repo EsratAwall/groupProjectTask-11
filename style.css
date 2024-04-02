@@ -11,12 +11,50 @@ position: sticky !important;
 top: 0;
 background-color: white;
 z-index: 99999 ;
-transition: background-color 0.4s ease-in-out;
+transition: 0.4s;
 }
-.nav-1 .scrolled{
-  background-color:rgb(97, 164, 3);
-  opacity: .98;
-
+.nav-link{
+  transition: all 0.2s;
+  position: relative;
+  color: rgb(115, 120, 131);
+}
+.nav-link::after{
+  content: '';
+  opacity: 0;
+  position:absolute ;
+  transition: all 0.2s;
+  height: 2px;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  background-color: rgb(101 163 13);
+  
+}
+.nav-link:hover::after{
+ opacity: 1;
+ 
+}
+.nav-link:hover{
+  color:rgb(101 163 13) ;
+}
+.nav-link1{
+  transition: all 0.2s;
+  position: relative;
+  color: rgb(115, 120, 131);
+  text-decoration: none;
+  padding-top: 10px;
+}
+.nav-link1::after{
+  content: '';
+  opacity: 0;
+  position:absolute ;
+  transition: all 0.2s;
+  height: 2px;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  background-color: rgb(101 163 13);
+  
 }
 /* Our story */
 .parent{
@@ -86,4 +124,72 @@ transition: background-color 0.4s ease-in-out;
     left: -1px;
     background:rgb(97, 164, 3);
 }
-  
+  /* button hover */
+  .btn{
+    border:3px solid rgb(101 163 13);
+    color: rgb(115, 120, 131);
+  }
+  .btn:hover{
+  background-color:rgb(97, 164, 3) ;
+  color: white;
+  }
+  .btn1{
+    background-color:  rgb(101 163 13);
+    color: white;
+  }
+  .btn1:hover{
+  background-color:white;
+  color:rgb(101 163 13);
+  }
+  .btn2{
+    background-color:  rgb(101 163 13);
+    color: white;
+    border: 0;
+  }
+  .btn2:hover{
+  background-color:white;
+  color:rgb(101 163 13);
+  border: 3px solid rgb(97, 164, 3);
+  }
+  .btn3{
+    background-color:  rgb(101 163 13);
+    color: white;
+    border: 0;
+  }
+  .btn3:hover{
+  background-color:rgb(190, 220, 148);
+  color:rgb(66, 111, 2);
+  }
+  .btn4{
+    background-color:  rgb(101 163 13);
+    color: white;
+    width: 31%;
+    border: 2px solid white;
+  }
+  .btn4:hover{
+  background-color:white;
+  color:rgb(101 163 13);
+  border: 3px solid rgb(97, 164, 3);
+  }
+  .btn5{
+    background-color:  rgb(101 163 13);
+    color: white;
+    width:100%;
+    border: 2px solid white;
+  }
+  .btn5:hover{
+  background-color:white;
+  color:rgb(101 163 13);
+  border: 3px solid rgb(97, 164, 3);
+  }
+  .btn6{
+    background-color:white;
+    color:rgb(97, 164, 3) ;
+    width:31%;
+    border: 2px solid white;
+  }
+  .btn6:hover{
+  background-color:rgb(97, 164, 3);
+  color:white;
+  border: 3px solid white;
+  }
